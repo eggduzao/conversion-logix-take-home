@@ -1,6 +1,6 @@
-Prepared from the uploaded SOLUTION.md.
+Prepared from the original `.SOLUTION.md`.
 
-Original line count: 6021
+Original line count: 16489
 Compressed documentation line count: 891
 
 The source contained detailed command transcripts, outputs, troubleshooting,
