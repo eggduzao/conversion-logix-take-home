@@ -1,0 +1,35 @@
+# Flyte GCP take-home project environment.
+#
+# This file intentionally contains only non-secret, project-specific values.
+# Load it with:
+#
+#   source .project-env
+#
+
+export PROJECT_ROOT="/Users/egg/projects/Conversion_Logix_Takehome_Project"
+
+export GCP_PROJECT_ID="clx-take-home"
+export GCP_REGION="us-central1"
+
+export FLYTE_APPLICATION="flyte"
+export FLYTE_ENVIRONMENT="gcp"
+export FLYTE_DNS_DOMAIN="gusmaolab.org"
+export FLYTE_HOST="flyte.gusmaolab.org"
+
+export UPSTREAM_REPOSITORY="https://github.com/unionai-oss/deploy-flyte"
+export UPSTREAM_COMMIT="018adaa25921d20783be4e90d6c5bb821873ad3c"
+
+export UPSTREAM_SNAPSHOT_ROOT="${PROJECT_ROOT}/upstream/snapshots/deploy-flyte-${UPSTREAM_COMMIT}"
+export UPSTREAM_FLYTE_CORE_DIR="${UPSTREAM_SNAPSHOT_ROOT}/environments/gcp/flyte-core"
+
+export WORKING_FLYTE_CORE_DIR="${PROJECT_ROOT}/infrastructure/flyte-core"
+
+# NEVER add credentials, tokens, passwords, service-account JSON,
+# billing-account identifiers, or Terraform-generated secrets here.
+
+# GCP-generated stable identifiers.
+export GCP_PROJECT_NUMBER="715475195576"
+export TF_STATE_BUCKET="clx-take-home-tfstate-715475195576"
+
+# Contact used for TLS certificate notifications.
+export FLYTE_CERT_EMAIL="eduardogade@gmail.com"

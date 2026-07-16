@@ -1,0 +1,85 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+
+# Micromamba / environment files
+.micromamba/
+
+# Terraform local and sensitive files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+
+# Terraform variable files may contain sensitive values
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Google and service-account credentials
+*.key
+*.pem
+*service-account*.json
+application_default_credentials.json
+
+# Flyte local credentials/configuration
+.flyte/
+
+# Temporary files
+*.tmp
+*.log
+
+# Upstream download archives
+upstream/archives/
+
+# Immutable upstream snapshots are retained locally as reference material.
+upstream/snapshots/
+
+# Temporary work
+.scratch/
+tmp/
+.temp/
+
+# Terraform-generated files
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive Terraform variable files
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Google credentials and service-account keys
+application_default_credentials.json
+*.key
+*service-account*.json
+
+# Local Flyte configuration
+.flyte/
+
+# Evidence may later be curated into submission-safe artifacts.
+# Raw local evidence remains untracked.
+evidence/
+
+# Screens used while coding
+.SOLUTION.md
